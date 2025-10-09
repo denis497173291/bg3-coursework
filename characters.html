@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Персонажи — Курсовая BG3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Шапка -->
+    <header class="header">
+      <a class="header__brand" href="index.html">
+        <div class="header__logo hero__logo">BG3</div>
+        <div class="header__title">Baldur's Gate 3 — Coursework</div>
+      </a>
+      <nav class="nav" aria-label="Главная навигация">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="tips.html">Советы</a>
+        <a class="nav__link" href="history.html">История</a>
+        <a class="nav__link" href="gallery.html">Галерея</a>
+        <a class="nav__link" href="characters.html">Персонажи</a>
+      </nav>
+    </header>
+
+    <!-- Контент -->
+    <main>
+      <section class="card">
+        <h2 class="section__title">Интерактив: персонажи</h2>
+        <p class="note">
+          Клик по кнопке «Подробнее» открывает модальное окно с фото, ролью и биографией персонажа.
+        </p>
+        <div id="chars" class="grid" style="margin-top:12px"></div>
+      </section>
+    </main>
+    
+    <!-- Модальное окно -->
+    <div id="charModal" 
+         class="modal" 
+         style="position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(2,6,23,0.7); z-index:60">
+      
+      <div style="width:min(760px,95%); background:var(--panel); padding:20px; border-radius:12px; box-shadow:0 20px 60px rgba(2,6,23,0.9)">
+        <div style="display:flex; justify-content:space-between; align-items:center">
+          <h3 class="modal__title" style="margin:0">Название</h3>
+          <button class="modal__close" style="background:transparent; border:none; color:var(--muted); font-size:24px">✕</button>
+        </div>
+        
+        <div class="modal__body" style="margin-top:12px; color:var(--muted)"></div>
+      </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="footer card">История и характер игровых личностей.</footer>
+  </div>
+
+  <script src="scripts/interactive.js"></script>
+</body>
+</html>

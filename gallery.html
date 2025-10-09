@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Галерея — Курсовая BG3</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Шапка -->
+    <header class="header">
+      <a class="header__brand" href="index.html">
+        <div class="header__logo hero__logo">BG3</div>
+        <div class="header__title">Baldur's Gate 3 — Coursework</div>
+      </a>
+      <nav class="nav" aria-label="Главная навигация">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="tips.html">Советы</a>
+        <a class="nav__link" href="history.html">История</a>
+        <a class="nav__link" href="gallery.html">Галерея</a>
+        <a class="nav__link" href="characters.html">Персонажи</a>
+      </nav>
+    </header>
+
+    <!-- Основа -->
+    <main>
+      <section class="card">
+        <h2 class="section__title">Галерея</h2>
+        <p class="note">Кликните по картинке, чтобы открыть её в лайтбоксе.</p>
+
+        <div class="grid">
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img1.jpg" data-full="assets/gallery/img1.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img2.jpg" data-full="assets/gallery/img2.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img3.jpg" data-full="assets/gallery/img3.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img4.jpg" data-full="assets/gallery/img4.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img5.jpg" data-full="assets/gallery/img5.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img6.jpg" data-full="assets/gallery/img6.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img7.jpg" data-full="assets/gallery/img7.jpg">
+          </div>
+          <div class="card">
+            <img class="gallery__img" src="assets/gallery/img8.jpg" data-full="assets/gallery/img8.jpg">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer card">Созданные игровым сообще</footer>
+  </div>
+
+  <!-- Лайтбокс -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <img class="lightbox__img" scr="">
+    <button class="lightbox__close" 
+            style="position:absolute; top:22px; right:22px; padding:10px; border-radius:8px; background:var(--panel); color:var(--text); border:none">
+      ✕
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
